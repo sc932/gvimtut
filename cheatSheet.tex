@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\bibliographystyle{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{ulem}
+\usepackage{pstricks,pst-node}
+
+\addtolength{\oddsidemargin}{-0.875in}
+\addtolength{\evensidemargin}{-0.875in}
+\addtolength{\textwidth}{1.5in}
+
+\addtolength{\topmargin}{-0.875in}
+\addtolength{\textheight}{1.5in}
+
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\definecolor{MyDarkGreen}{rgb}{0,0.5,0} 
+
+\begin{document}
+
+\begin{center}
+  \includegraphics{Keys/key_V.png}
+  \includegraphics{Keys/key_I.png}
+  \includegraphics{Keys/key_M.png}
+  \includegraphics{Keys/key_underscore.png}
+  \includegraphics{Keys/key_T.png}
+  \includegraphics{Keys/key_U.png}
+  \includegraphics{Keys/key_T.png}
+  \includegraphics{Keys/key_O.png}
+  \includegraphics{Keys/key_R.png}
+  \includegraphics{Keys/key_I.png}
+  \includegraphics{Keys/key_A.png}
+  \includegraphics{Keys/key_L.png}
+\end{center}
+
+\begin{flushright}
+  by: Scott Clark
+\end{flushright}
+
+\begin{center}
+  \begin{tabular}{ccccccc}
+    & & & char & & & \\
+    & & & \texttt{k}& & & \\
+   \texttt{B} & \texttt{b}& \texttt{h}& \large{\textbf{MOVE}} & \texttt{l}& \texttt{w}& \texttt{W}\\
+   Word & word & char & \texttt{j} & char & word & Word \\
+    & & & char & & & \\
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{ccccccccc}
+   \texttt{0} & \texttt{\^}& \texttt{gE}&\texttt{ge}& \large{\textbf{EDGE}} & \texttt{e}& \texttt{E}& \texttt{\$} & \ \ \ \ \ \ \ \ \ \ \\
+   line & $1^{\text{st}}$ char & Word & word &  & word & Word & line & \ \ \ \ \\
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{ccccc}
+   & & above & & \\
+   & & \texttt{O} & & \\
+   \texttt{I} & \texttt{i} & \large{\textbf{INSERT}} & \texttt{a} & \texttt{A} \\
+   line & char & \texttt{o} & char & line \\
+   & & below & &
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{ccccc}
+   \ \ \ \ \ \ \ \ \ & \texttt{gg} & \large{\textbf{GOTO}} & \textit{x}\texttt{gg} & \texttt{G} \\
+   \ \ \ \ & first line & & line \textit{x} & last line \\
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{ccc}
+   \texttt{F}\textit{x} & \large{\textbf{FIND}} & \texttt{f}\textit{x} \\
+   prev \textit{x} & inline char & next \textit{x} \\
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{ccc}
+   \texttt{,} & \large{\textbf{REPEAT}} & \texttt{;} \\
+   undo & last move & redo \\
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{cccc}
+    \large{\textbf{MARK LINE}} & \texttt{m}\textit{x} & \texttt{'}\textit{x} & \texttt{'.} \\
+    \texttt{:marks} & mark line & goto line marked \textit{x} & goto last edited line \\
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{cc}
+    \large{\textbf{DELETE}} & \texttt{d}\textit{x}\textit{\{move cmd\}}\\
+    & delete up to \textit{x} \textit{\{move cmd\}}s
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \large{\textbf{SEARCH}} & \texttt{/}\textit{text}\texttt{<ENTER>} & \texttt{?}\textit{text}\texttt{<ENTER>}\\
+    & search forward/down for \textit{text} & search backward/up
+  \end{tabular}
+\end{center}
+  
+\begin{center}
+  \begin{tabular}{ccccccc}
+   \texttt{g#} & \texttt{#}& \texttt{N}& \large{\textbf{MOVE}} & \texttt{n}& \texttt{*}& \texttt{g*}\\
+   prev partial match & prev current word & prev match &  & next match & next current word & next partial match \\
+  \end{tabular}
+\end{center}
+
+
+\end{document}
